@@ -1,0 +1,9 @@
+- **Lectures**
+  - [Lecture 1](/lecture-1/lecture.md)
+
+
+- **Info**
+  - [Homework](/homework/homework.md)
+  - [Videos](/videos/videos.md)
+  - [Demos](/demos/demos.md)
+
