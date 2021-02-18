@@ -1,13 +1,14 @@
 # Homeworks
 
- > https://docs.google.com/spreadsheets/d/1UgA4Q3RWCM9jaec_tdn01OTQEEyRRLscDulHJ7J2Cpo/edit#gid=0
+ > Students list + homeworks: https://docs.google.com/spreadsheets/d/1UgA4Q3RWCM9jaec_tdn01OTQEEyRRLscDulHJ7J2Cpo/edit#gid=0
 
 ### Lecture 1 Homework
 
 - Setup workspace
+- setup addons, play with them
 - Try to set up keymap (and use multicursors, fast text selections)
 - tidy up your repo(s) with todo applications according to latest knowledge on github, set eslint, prettier to the repo, fix js conflicts, deal with it, make it nicer.
-- Try to code - https://www.figma.com/file/N6yaH1fyEPYmxvDYHpAWuuPc/DB2-Internship
+- Project overview, try to code - https://www.figma.com/file/N6yaH1fyEPYmxvDYHpAWuuPc/DB2-Internship
 
 References:
 
