@@ -19,3 +19,29 @@ References:
 - https://github.com/DB2-Limited/awesome-cheats
 - https://habr.com/ru/post/256109/
 
+
+### Lecture 2 Homework
+- Practice with Git (branching, merge, rebase, revert, PRs) - https://learngitbranching.js.org/
+- Finish free Codecademy course (Bash/Shell) - https://www.codecademy.com/learn/learn-the-command-line
+- Deploy simple html page to Github Pages - https://pages.github.com/
+- Learn how to use .gitignore, .gitkeep, .gitattributes
+- Learn about gitflow
+- Create Github issue and PR templates
+
+References:
+- https://guides.github.com/introduction/git-handbook/
+- https://github.github.com/training-kit/
+- http://git-school.github.io/visualizing-git/
+- https://git-scm.com/
+- https://git-scm.com/docs/gitignore
+- https://github.com/github/gitignore
+- https://git-scm.com/docs/gitattributes
+- https://datasift.github.io/gitflow/IntroducingGitFlow.html
+- https://semver.org/
+- https://www.udacity.com/course/version-control-with-git--ud123
+
+Extras:
+- https://www.udacity.com/course/linux-command-line-basics--ud595
+- https://linuxsurvival.com/linux-tutorial-introduction/
+- https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/
+
