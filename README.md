@@ -9,3 +9,16 @@
 - Code snippets, multicursors, hotkeys
 - BEM
 - eslint, prettier, editorconfig
+
+### [22.02 Lecture 2](/lecture-2/lecture.md)
+
+- Intro to VCS
+- VCS Services
+- Glossary
+- Base Commands
+- Branching
+- .gitignore
+- Tips & Tricks
+- Gitflow
+- Github Templates
+- Github Pages
