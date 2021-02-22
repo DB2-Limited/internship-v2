@@ -1,6 +1,6 @@
 # Homeworks
 
- > Students list + homeworks: https://docs.google.com/spreadsheets/d/1UgA4Q3RWCM9jaec_tdn01OTQEEyRRLscDulHJ7J2Cpo/edit#gid=0
+ > Students list + homeworks: https://docs.google.com/spreadsheets/d/1UgA4Q3RWCM9jaec_tdn01OTQEEyRRLscDulHJ7J2Cpo/edit?usp=sharing
 
 ### Lecture 1 Homework
 
