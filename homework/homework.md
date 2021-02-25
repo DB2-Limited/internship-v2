@@ -45,3 +45,15 @@ Extras:
 - https://linuxsurvival.com/linux-tutorial-introduction/
 - https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/
 
+### Lecture 3 Homework
+
+- Switch div`s to semantic tags
+- Set up npm/yarn, install some dependencies (find interesting tasks)
+- Add SASS + mixins
+- Set up adaptive*
+
+References:
+- https://habr.com/ru/post/133363/
+- http://prgssr.ru/development/yarn-ili-npm-vse-chto-vam-nuzhno-znat.html
+- https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+- https://medium.com/magnetcoop/do-you-really-need-a-css-framework-767a8434eb76

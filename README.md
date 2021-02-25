@@ -22,3 +22,10 @@
 - Gitflow
 - Github Templates
 - Github Pages
+
+### [25.02 Lection 3](/lecture-3/lecture.md)
+- Semantic HTML
+- Package managers
+- CSS frameworks
+- Adaptive coding
+- CSS Preprocessors & Postprocessors

@@ -7,3 +7,6 @@
 
 ### Lecture #2
 - [VCS. Git](https://youtu.be/nND6Si8kOvg)
+
+### Lecture #3
+- [HTML5 & CSS3 intro](https://youtu.be/8BAmhcsY5E0)
