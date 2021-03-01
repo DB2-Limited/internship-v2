@@ -10,3 +10,6 @@
 
 ### Lecture #3
 - [HTML5 & CSS3 intro](https://youtu.be/8BAmhcsY5E0)
+
+### Lecture #4
+- [HTML Templates. Pug, Nunjucks. Gulp](https://youtu.be/Ev8qxnO0xZ8)

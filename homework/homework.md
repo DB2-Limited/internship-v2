@@ -57,3 +57,22 @@ References:
 - http://prgssr.ru/development/yarn-ili-npm-vse-chto-vam-nuzhno-znat.html
 - https://www.w3schools.com/css/css3_mediaqueries_ex.asp
 - https://medium.com/magnetcoop/do-you-really-need-a-css-framework-767a8434eb76
+
+### Lecture 4 Homework
+
+- Coding more pages from figma
+- Configure Gulp and some Gulp plugins
+- Rewrite HTML with Pug or Nunjucks
+- Play with SASS lint and SASS lint autofixer
+
+References:
+- https://devacademy.ru/article/nunjucks-shablonizator-dlia-javascript/
+- https://gist.github.com/neretin-trike/53aff5afb76153f050c958b82abd9228
+- https://devhints.io/pug
+- https://pugjs.org/api/getting-started.html
+- https://mozilla.github.io/nunjucks/getting-started.html
+- https://gulpjs.com/plugins/
+- https://github.com/gulp-community
+- https://github.com/alferov/awesome-gulp#plugins
+- https://github.com/DB2-Limited/awesome-cheats/blob/master/frontend/linting_sass.md
+- https://www.atlassian.com/git/tutorials/merging-vs-rebasing
