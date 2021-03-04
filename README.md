@@ -34,3 +34,8 @@
 - HTML template engines
 - Tooling
 - Gulp
+
+### [04.03 Lection 5](/lecture-5/lecture.md)
+- Webpack
+- Loaders & plugins
+- Parcel

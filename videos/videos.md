@@ -13,3 +13,6 @@
 
 ### Lecture #4
 - [HTML Templates. Pug, Nunjucks. Gulp](https://youtu.be/Ev8qxnO0xZ8)
+
+### Lecture #5
+- [Webpack. Loaders, plugins. (Parcel+)](https://youtu.be/ul0opKg9kik)

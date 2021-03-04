@@ -1,6 +1,6 @@
 # Homeworks
 
- > Students list + homeworks: https://docs.google.com/spreadsheets/d/1UgA4Q3RWCM9jaec_tdn01OTQEEyRRLscDulHJ7J2Cpo/edit?usp=sharing
+> Students list + homeworks: https://docs.google.com/spreadsheets/d/1UgA4Q3RWCM9jaec_tdn01OTQEEyRRLscDulHJ7J2Cpo/edit?usp=sharing
 
 ### Lecture 1 Homework
 
@@ -19,8 +19,8 @@ References:
 - https://github.com/DB2-Limited/awesome-cheats
 - https://habr.com/ru/post/256109/
 
-
 ### Lecture 2 Homework
+
 - Practice with Git (branching, merge, rebase, revert, PRs) - https://learngitbranching.js.org/
 - Finish free Codecademy course (Bash/Shell) - https://www.codecademy.com/learn/learn-the-command-line
 - Deploy simple html page to Github Pages - https://pages.github.com/
@@ -29,6 +29,7 @@ References:
 - Create Github issue and PR templates
 
 References:
+
 - https://guides.github.com/introduction/git-handbook/
 - https://github.github.com/training-kit/
 - http://git-school.github.io/visualizing-git/
@@ -41,6 +42,7 @@ References:
 - https://www.udacity.com/course/version-control-with-git--ud123
 
 Extras:
+
 - https://www.udacity.com/course/linux-command-line-basics--ud595
 - https://linuxsurvival.com/linux-tutorial-introduction/
 - https://www.maketecheasier.com/cheatsheet/vim-keyboard-shortcuts/
@@ -50,9 +52,10 @@ Extras:
 - Switch div`s to semantic tags
 - Set up npm/yarn, install some dependencies (find interesting tasks)
 - Add SASS + mixins
-- Set up adaptive*
+- Set up adaptive\*
 
 References:
+
 - https://habr.com/ru/post/133363/
 - http://prgssr.ru/development/yarn-ili-npm-vse-chto-vam-nuzhno-znat.html
 - https://www.w3schools.com/css/css3_mediaqueries_ex.asp
@@ -66,6 +69,7 @@ References:
 - Play with SASS lint and SASS lint autofixer
 
 References:
+
 - https://devacademy.ru/article/nunjucks-shablonizator-dlia-javascript/
 - https://gist.github.com/neretin-trike/53aff5afb76153f050c958b82abd9228
 - https://devhints.io/pug
@@ -76,3 +80,24 @@ References:
 - https://github.com/alferov/awesome-gulp#plugins
 - https://github.com/DB2-Limited/awesome-cheats/blob/master/frontend/linting_sass.md
 - https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+
+### Lecture 5 Homework
+
+- Setup brand new project with Webpack
+- Configure webpack loaders (e.g. SASS, Pug or Nunjucks)
+- Configure webpack plugins (e.g. Minification, Hot Module Replacement, Uglify, Compress)
+
+References:
+- https://tproger.ru/translations/webpack-basics/
+- https://github.com/WeAreAthlon/frontend-webpack-boilerplate
+- https://babeljs.io/docs/en/babel-preset-env
+- https://www.freecodecamp.org/news/javascript-new-features-es2020/
+- [You Don't Know JS: Up & Going](https://github.com/getify/You-Dont-Know-JS/tree/master/up%20%26%20going) /
+  [Вы не знаете JS: Начните и Совершенствуйтесь](https://github.com/azat-io/you-dont-know-js-ru/tree/master/up%20%26%20going)
+- https://github.com/4doge/webpack-pug-sass-demo
+- https://github.com/SoldierCorp/webpack-starter-pug-sass-es6-jquery/tree/master/build
+- https://webpack.js.org/plugins/
+- https://webpack.js.org/loaders/
+- https://github.com/webpack-contrib/awesome-webpack
+- https://github.com/bradtraversy/vanilla-parcel-boilerplate
+- https://parceljs.org/pug.html

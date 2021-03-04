@@ -16,4 +16,8 @@
 
 - https://github.com/IgorKurkov/gulp-pug-nunjucks-examples
 
+## Lecture 5
 
+- https://github.com/IgorKurkov/lesson-5-webpack-examples
+- https://github.com/WeAreAthlon/frontend-webpack-boilerplate
+- https://github.com/bradtraversy/vanilla-parcel-boilerplate
