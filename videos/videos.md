@@ -16,3 +16,6 @@
 
 ### Lecture #5
 - [Webpack. Loaders, plugins. (Parcel+)](https://youtu.be/ul0opKg9kik)
+
+### Lecture #6
+- [JavaScript introduction, Data types, Arrays, Objects](https://youtu.be/sHpMIQefjo4)

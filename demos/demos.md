@@ -21,3 +21,7 @@
 - https://github.com/IgorKurkov/lesson-5-webpack-examples
 - https://github.com/WeAreAthlon/frontend-webpack-boilerplate
 - https://github.com/bradtraversy/vanilla-parcel-boilerplate
+
+## Lecture 6
+
+- None ;(

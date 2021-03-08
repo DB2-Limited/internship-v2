@@ -101,3 +101,30 @@ References:
 - https://github.com/webpack-contrib/awesome-webpack
 - https://github.com/bradtraversy/vanilla-parcel-boilerplate
 - https://parceljs.org/pug.html
+
+### Lecture 6 Homework
+
+- Practice JS (Strings, Arrays, Loops, Functions)
+- Achive minimum 3000 points on Codecup (better more ;)
+- Find interesting JS cases for next lecture to discuss
+
+References:
+- https://www.w3schools.com/js/exercise_js.asp
+- https://www.w3resource.com/javascript-exercises/
+- https://codecup.online/problems/
+- https://codecup.online/problem/5/ 
+- https://www.codewars.com/
+- https://coderbyte.com/challenges
+
+- Practice JS (Objects, Events)
+- Solve these: 
+  - make unique array of objects [{ a:1, b:2 }, { a:2, c:3 }, { a:1, b:2 }] -> [{ a:1, b:2 }, { a:2, c:3 }]
+  - get through array without any for/while, map, forEach, reduce, etc. functions. You can only use getting element of an array by it's index and getting array's length, self-made functions.
+  - Find letters in ukranian words that are written the same as English ones. 'Дерево' -> ['e', 'p', 'o']
+- Solve exercises (1, 2, 3, 4, 7, 10, 14, 16, 17) https://www.w3resource.com/javascript-exercises/javascript-object-exercises.php
+- Coding https://www.figma.com/file/N6yaH1fyEPYmxvDYHpAWuuPc/DB2-Internship?node-id=557%3A2
+
+References:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+- https://docs.google.com/presentation/d/1_VnSmpj1CiUvb-VGjnY4YuLey4GW_IaMJ5SOJMMkRco/edit?usp=sharing
