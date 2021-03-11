@@ -39,3 +39,13 @@
 - Webpack
 - Loaders & plugins
 - Parcel
+
+### [08.03 Lection 6](/lecture-6/lecture.md)
+- Arrays
+- Functions
+- Objects
+
+### [11.03 Lection 7](/lecture-7/lecture.md)
+- DOM
+- Events
+- ESLint

@@ -88,6 +88,7 @@ References:
 - Configure webpack plugins (e.g. Minification, Hot Module Replacement, Uglify, Compress)
 
 References:
+
 - https://tproger.ru/translations/webpack-basics/
 - https://github.com/WeAreAthlon/frontend-webpack-boilerplate
 - https://babeljs.io/docs/en/babel-preset-env
@@ -104,27 +105,47 @@ References:
 
 ### Lecture 6 Homework
 
+- Presentation: https://docs.google.com/presentation/d/1_VnSmpj1CiUvb-VGjnY4YuLey4GW_IaMJ5SOJMMkRco/edit?usp=sharing
+
 - Practice JS (Strings, Arrays, Loops, Functions)
 - Achive minimum 3000 points on Codecup (better more ;)
 - Find interesting JS cases for next lecture to discuss
 
 References:
+
 - https://www.w3schools.com/js/exercise_js.asp
 - https://www.w3resource.com/javascript-exercises/
 - https://codecup.online/problems/
-- https://codecup.online/problem/5/ 
+- https://codecup.online/problem/5/
 - https://www.codewars.com/
 - https://coderbyte.com/challenges
 
-- Practice JS (Objects, Events)
-- Solve these: 
+- Practice JS (Objects)
+- Solve these:
   - make unique array of objects [{ a:1, b:2 }, { a:2, c:3 }, { a:1, b:2 }] -> [{ a:1, b:2 }, { a:2, c:3 }]
   - get through array without any for/while, map, forEach, reduce, etc. functions. You can only use getting element of an array by it's index and getting array's length, self-made functions.
   - Find letters in ukranian words that are written the same as English ones. 'Дерево' -> ['e', 'p', 'o']
 - Solve exercises (1, 2, 3, 4, 7, 10, 14, 16, 17) https://www.w3resource.com/javascript-exercises/javascript-object-exercises.php
 - Coding https://www.figma.com/file/N6yaH1fyEPYmxvDYHpAWuuPc/DB2-Internship?node-id=557%3A2
 
+### Lecture 7 Homework
+
+- Practice JS (DOM, Events)
+- Solve exercises http://learn.javascript.ru/event-delegation#tasks
+- http://learn.javascript.ru/drag-and-drop#tasks
+- https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+- https://maxello.gitbooks.io/js-note/content/16_dom_events/zadachi.html
+
 References:
+
+- https://developer.mozilla.org/ru/docs/Web/API/window/requestAnimationFrame
+- https://developer.mozilla.org/ru/docs/Web/API/Event
+- https://learn.javascript.ru/
+- http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+- https://developer.mozilla.org/ru/docs/Web/JavaScript/EventLoop
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 - https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-- https://docs.google.com/presentation/d/1_VnSmpj1CiUvb-VGjnY4YuLey4GW_IaMJ5SOJMMkRco/edit?usp=sharing
+- https://www.w3.org/TR/DOM-Level-2-Core/introduction.html
+- http://learn.javascript.ru/event-delegation
+- https://www.youtube.com/watch?v=cCOL7MC4Pl0 (u can choose rus subs)
+- https://www.youtube.com/watch?v=8aGhZQkoFbQ (u can choose rus subs)
