@@ -3,6 +3,7 @@
 > The aim of education should be to teach us rather how to think, than what to think.
 
 ### [18.02 Lection 1](/lecture-1/lecture.md)
+
 - Welcome
 - IDE setup and configuration
 - IDE extensions
@@ -24,6 +25,7 @@
 - Github Pages
 
 ### [25.02 Lection 3](/lecture-3/lecture.md)
+
 - Semantic HTML
 - Package managers
 - CSS frameworks
@@ -31,21 +33,25 @@
 - CSS Preprocessors & Postprocessors
 
 ### [1.03 Lection 4](/lecture-4/lecture.md)
+
 - HTML template engines
 - Tooling
 - Gulp
 
 ### [04.03 Lection 5](/lecture-5/lecture.md)
+
 - Webpack
 - Loaders & plugins
 - Parcel
 
 ### [08.03 Lection 6](/lecture-6/lecture.md)
+
+- JavaScript basics
+- Data types
 - Arrays
-- Functions
 - Objects
 
 ### [11.03 Lection 7](/lecture-7/lecture.md)
-- DOM
-- Events
-- ESLint
+
+- DOM, BOM
+- Events, Interfaces
