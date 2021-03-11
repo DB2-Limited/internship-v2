@@ -39,3 +39,9 @@
 - Webpack
 - Loaders & plugins
 - Parcel
+
+### [08.03 Lection 6](/lecture-6/lecture.md)
+- JavaScript basics
+- Data types
+- Arrays
+- Objects
