@@ -149,3 +149,8 @@ References:
 - http://learn.javascript.ru/event-delegation
 - https://www.youtube.com/watch?v=cCOL7MC4Pl0 (u can choose rus subs)
 - https://www.youtube.com/watch?v=8aGhZQkoFbQ (u can choose rus subs)
+
+### Lecture 8 Homework
+
+- http://learn.javascript.ru/task/add-method-property-coffeemachine
+- http://learn.javascript.ru/functional-inheritance#tasks
