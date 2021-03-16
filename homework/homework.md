@@ -154,3 +154,10 @@ References:
 
 - http://learn.javascript.ru/task/add-method-property-coffeemachine
 - http://learn.javascript.ru/functional-inheritance#tasks
+
+References:
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
+- https://learn.javascript.ru/call-apply
+- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
