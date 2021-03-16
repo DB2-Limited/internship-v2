@@ -25,3 +25,12 @@
 ## Lecture 6
 
 - None ;(
+
+## Lecture 7
+
+- None ;(
+
+## Lecture 8
+
+- All demos are in lecture
+

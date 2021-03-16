@@ -55,3 +55,8 @@
 
 - DOM, BOM
 - Events, Interfaces
+
+### [15.03 Lection 8](/lecture-8/lecture.md)
+
+- OOP, FP
+- ES6 Classes

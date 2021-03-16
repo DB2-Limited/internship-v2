@@ -29,3 +29,7 @@
 ### Lecture #7
 
 - [JS. DOM, BOM, Events, Interfaces](https://youtu.be/_tNZS9TzEPA)
+
+### Lecture #8
+
+- [OOP, FP, Prototypes, ES6 Classes](https://youtu.be/5Cel95B77uc)
