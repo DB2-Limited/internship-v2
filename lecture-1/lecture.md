@@ -106,8 +106,9 @@ trim_trailing_whitespace = true
 max_line_length = off
 trim_trailing_whitespace = false
 ```
-- eslint recommended list of rules: 
-https://eslint.org/docs/rules/
+
+- eslint recommended list of rules:
+  https://eslint.org/docs/rules/
 - eslint boilerplate template: https://github.com/travishorn/eslint-prettier-boilerplate
 
 - code from lecture https://github.com/IgorKurkov/eslint-prettier-editorconfig-boilerplate
@@ -115,10 +116,42 @@ https://eslint.org/docs/rules/
 ### Vscode settings for prettier formatOnSave
 
 (ctrl+shift+P, select settings.json)
+
 ```
 // Enable per-language
 "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
 },
+```
+
+### ESLint
+
+- Airbnb, https://github.com/airbnb/javascript
+- Standard, https://github.com/standard/standard
+- Google, https://github.com/google/eslint-config-google
+
+```json
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "template-curly-spacing": ["error", "always"],
+    "no-cond-assign": ["error", "always"],
+    "no-console": "off",
+    "eol-last": "error"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  }
+}
 ```
