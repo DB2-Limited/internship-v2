@@ -128,3 +128,9 @@ References:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 - https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 - https://docs.google.com/presentation/d/1_VnSmpj1CiUvb-VGjnY4YuLey4GW_IaMJ5SOJMMkRco/edit?usp=sharing
+
+### Lecture 9 Homework
+* Write Node.js (Koa-based) server
+* Integrate Nunjucks template engine
+* Deploy to Heroku
+* Could read the article, please [link](https://learn.javascript.ru/async-await)

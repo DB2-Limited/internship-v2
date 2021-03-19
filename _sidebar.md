@@ -6,6 +6,7 @@
   - [Lecture 4](/lecture-4/lecture.md)
   - [Lecture 5](/lecture-5/lecture.md)
   - [Lecture 6](/lecture-6/lecture.md)
+  - [Lecture 9](/lecture-9/lecture.md)
 
 - **Info**
   - [Homework](/homework/homework.md)
