@@ -2,7 +2,7 @@ create table population_years
 (
     id         INT not null
         primary key,
-    population INT,
+    population FLOAT,
     year       INT,
     country_id INT not null
         references countries
