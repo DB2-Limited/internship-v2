@@ -62,12 +62,11 @@ mongoClient.connect(function(err, client){
 ```js
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true, useUnifiedTopology: true});
-
 const Cat = mongoose.model('Cat', { name: String });
-
 const kitty = new Cat({ name: 'Zildjian' });
 kitty.save().then(() => console.log('meow'));
 ```
+
 ## NoSQL vs SQL
 ![VS](NoSQLVSSQL.png)
 
@@ -136,4 +135,28 @@ START TRANSACTION;
 
   DROP TABLE category;
 COMMIT;
+```
+## Global errors handler
+```js
+app.use(async (ctx, next) => {
+  try {
+    await next();
+  } catch (err) {
+    if (err.isJoi) {
+      ctx.throw(400, err.details[0].message);
+    }
+    ctx.throw(400, 'Something wrong');
+  }
+});
+```
+## REDIS
+ - [download](https://redis.io/)
+ - [cloud usage](https://redislabs.com/)
+ - [app for view](https://github.com/qishibo/AnotherRedisDesktopManager)
+
+```js
+const Redis = require('ioredis');
+const redis = new Redis('redis://localhost:6379');
+redis.set('iAmKey', JSON.stringify({name: 'Stella'}) // create
+redis.get('iAmKey') //get
 ```

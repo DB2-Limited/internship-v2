@@ -168,3 +168,10 @@ References:
 * Deploy to Heroku
 * Could read the article, please [link](https://learn.javascript.ru/async-await)
 
+### Lecture 11 Homework
+* Write CRUD for user and category.
+* Repeat logic for Redis.
+* CREATE MIGRATION!!!!!!!!!!!!!!!!!!!!!!!!!
+* Deploy your postgres and redis in cloud and in local. For use cloud, redisLab and elephantsql.
+* In the end I must create a request in heroku for CRUD!!!
+* Завдання з зірочкою =) .Check unique email and username for create and update. (HINT check constraint)

@@ -10,6 +10,8 @@
   - [Lecture 8](/lecture-8/lecture.md)
   - [Lecture 9](/lecture-9/lecture.md)
 
+  - [Lecture 11](/lecture-11/lecture.md)
+
 - **Info**
   - [Homework](/homework/homework.md)
   - [Videos](/videos/videos.md)
