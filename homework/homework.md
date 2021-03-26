@@ -167,6 +167,35 @@ References:
 * Integrate Nunjucks template engine
 * Deploy to Heroku
 * Could read the article, please [link](https://learn.javascript.ru/async-await)
+### Lecture 10 Homework
+
+
+Postgres installation:
+- Ubuntu 20.04: https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
+- Mac: 
+  - https://postgresapp.com/
+  - or via `brew install postgresql`
+- Windows: https://www.postgresql.org/download/windows/
+
+References:
+- https://www.codecademy.com/learn/learn-sql/modules/learn-sql-manipulation/cheatsheet
+- https://www.postgresqltutorial.com/
+
+Tasks:
+- Setup PostgreSQL locally.
+ 
+- Run scripts from following files:
+  - [Countries Table](lecture-10/countries.sql ':ignore')
+  - [Population Years Table](lecture-10/population_years.sql ':ignore')
+
+- Run queries to answer following questions:
+  1. How many entries in the countries table are from Africa?
+  2. What was the total population of the continent of Oceania in 2005?
+  3. What is the average population of countries in South America in 2003?
+  4. What country had the smallest population in 2007?
+  5. What is the average population of Ukraine during the time period covered by this dataset?
+  6. How many countries have the word “The” in their name?
+  7. What was the total population of each continent in 2010?
 
 ### Lecture 11 Homework
 * Write CRUD for user and category.

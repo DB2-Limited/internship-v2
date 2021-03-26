@@ -67,3 +67,15 @@
 - Event loop
 - Koa
 - Heroku
+
+### [22.03 Lection 10](/lecture-10/lecture.md)
+- Databases
+- SQL
+- Postgres
+
+### [26.03 Lection 11](/lecture-11/lecture.md)
+- NoSQL
+- SQL
+- Validation
+- Migration
+- Redis

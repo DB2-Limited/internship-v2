@@ -33,3 +33,6 @@
 ### Lecture #8
 
 - [OOP, FP, Prototypes, ES6 Classes](https://youtu.be/5Cel95B77uc)
+
+### LECTURE #11
+- [NoSQL, SQL in NODE](https://youtu.be/He3tSv-_LOk)
