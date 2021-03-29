@@ -74,6 +74,7 @@ https://vuejs.org/v2/guide/components.html https://flaviocopes.com/vue-cheat-she
 - `activated` - called when a kept-alive component is activated
 - `deactivated` - called when a kept-alive component is deactivated
 
+https://ru.vuejs.org/v2/guide/instance.html
 ## Directives
 
 https://vuejs.org/v2/api/#Directives
@@ -196,3 +197,8 @@ When used on a normal element, it listens to native DOM events only. When used o
 When listening to native DOM events, the method receives the native event as the only argument. If using inline statement, the statement has access to the special $event property: v-on:click="handle('ok', $event)".
 
 Starting in 2.4.0+, v-on also supports binding to an object of event/listener pairs without an argument. Note when using the object syntax, it does not support any modifiers.
+
+### v-model
+This directive will help work with forms
+
+https://ru.vuejs.org/v2/guide/forms.html

@@ -79,3 +79,10 @@
 - Validation
 - Migration
 - Redis
+
+### [29.03 Lection 12](/lecture-12/lecture.md)
+- Vue.js
+- v-for
+- v-on
+- v-bind
+- v-model
