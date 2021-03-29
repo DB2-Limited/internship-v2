@@ -204,3 +204,8 @@ Tasks:
 * Deploy your postgres and redis in cloud and in local. For use cloud, redisLab and elephantsql.
 * In the end I must create a request in heroku for CRUD!!!
 * Завдання з зірочкою =) .Check unique email and username for create and update. (HINT check constraint)
+
+### Lecture 12 Homework
+
+* Rewrite all njk on vue
+* Завдання з зірочкою. Use Vue Router.
