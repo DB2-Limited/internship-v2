@@ -209,3 +209,11 @@ Tasks:
 
 * Rewrite all njk on vue
 * Завдання з зірочкою. Use Vue Router.
+
+### Lecture 13 Homework
+
+* Create validation for input. Use https://ru.vuejs.org/v2/cookbook/form-validation.html or https://vee-validate.logaretm.com/v4.
+* You will have free time for improving your Vue and backend app.
+
+### Lecture 14
+* Keep calm and will learn Vue.
