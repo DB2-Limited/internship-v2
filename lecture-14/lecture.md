@@ -27,3 +27,7 @@ localStorage = window.localStorage;
 localStorage.setItem('myCat', 'Tom');
 let cat = localStorage.getItem('myCat');
 ```
+
+## BUS
+
+https://metanit.com/web/vuejs/4.15.php
