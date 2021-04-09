@@ -86,3 +86,7 @@
 - v-on
 - v-bind
 - v-model
+
+### [08.04 Lection 15](/lecture-15/lecture.md)
+- Auth
+- Passport.js

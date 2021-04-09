@@ -34,5 +34,8 @@
 
 - [OOP, FP, Prototypes, ES6 Classes](https://youtu.be/5Cel95B77uc)
 
-### LECTURE #11
+### Lecture #11
 - [NoSQL, SQL in NODE](https://youtu.be/He3tSv-_LOk)
+
+### Lecture #15
+- [Auth. Passport.js](https://youtu.be/He3tSv-_LOk)

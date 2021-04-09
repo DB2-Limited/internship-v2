@@ -217,3 +217,17 @@ Tasks:
 
 ### Lecture 14
 * Keep calm and will learn Vue.
+
+### Lecture 15
+* Integrate passport.js to your project.
+* Replace all the numbers an secrets that I pointed to on lecture with config values.
+* For project structure:
+ - create another folder with middlewares in src and store there your middlewares, obviously. For example, you have error catcher. Also move your validation as a middleware too.
+ - make sure that every entity in your project (User, Category) has the next structure, for example User:
+ -  - users/
+ -  -  - models/
+ -  -  -  - User.js (class with all of the user fields, some must to be private and etc, method for get auth data, which return email, fname, lname)
+ -  -  -  - UserDB.js (the same as I shown you, but has to return User class objects, or the result of get auth data method)
+ -  -  - users.controller.js
+ -  -  - users.router.js
+ -  -  - users.validator.js (exported as middlwares to be used in router)
