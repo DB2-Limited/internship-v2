@@ -90,3 +90,7 @@
 ### [08.04 Lection 15](/lecture-15/lecture.md)
 - Auth
 - Passport.js
+
+### [08.04 Lection 16](/lecture-16/lecture.md)
+- REST
+- Project architecture

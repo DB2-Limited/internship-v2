@@ -231,3 +231,6 @@ Tasks:
  -  -  - users.controller.js
  -  -  - users.router.js
  -  -  - users.validator.js (exported as middlwares to be used in router)
+
+ ### Lecture 16
+* Finish the task in lecture 15. Good luck!

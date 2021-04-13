@@ -39,3 +39,6 @@
 
 ### Lecture #15
 - [Auth. Passport.js](https://youtu.be/He3tSv-_LOk)
+
+### Lecture #16
+- [REST. Project architecture](https://youtu.be/JVEbsoQrA5o)
