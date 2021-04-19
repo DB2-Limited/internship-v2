@@ -5,16 +5,16 @@
   "directories": {
     "doc": "docs"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm test"
-    }
-  },
   "lint-staged": {
     "*.md": [
       "npm run pretty",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "scripts": {
     "serve": "docsify serve ./",
@@ -25,11 +25,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "husky": "^6.0.0",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "docsify-cli": "^4.4.1"
+    "docsify-cli": "^4.4.1",
+    "husky": "^4.2.3"
   }
 }
