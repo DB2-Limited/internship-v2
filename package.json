@@ -13,12 +13,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run precommit"
     }
   },
   "scripts": {
-    "serve": "docsify serve ./",
     "start": "nodemon server.js",
+    "serve": "docsify serve ./",
+    "precommit": "lint-staged",
     "pretty": "prettier --write \"./**/*.md\""
   },
   "author": "",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "docsify-cli": "^4.4.1",
-    "husky": "^4.2.3"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.5.4"
   }
 }
