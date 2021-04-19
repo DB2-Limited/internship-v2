@@ -5,15 +5,29 @@
   "directories": {
     "doc": "docs"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "*.md": [
+      "npm run pretty",
+      "git add"
+    ]
+  },
   "scripts": {
     "serve": "docsify serve ./",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "pretty": "prettier --write \"./**/*.md\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.6"
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
   },
   "devDependencies": {
     "docsify-cli": "^4.4.1"

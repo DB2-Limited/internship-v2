@@ -38,11 +38,18 @@
 
 - https://github.com/lerik1408/koa-test
 
-## Lecture 12 
+## Lecture 12
+
 - https://github.com/lerik1408/demo-vue
 
-## Lecture 15 
+## Lecture 15
+
 - https://github.com/lerik1408/koa-test/pull/1/files
 
-## Lecture 16 
+## Lecture 16
+
 - https://github.com/lerik1408/koa-test/pull/1/files
+
+## Lecture 17
+
+- [https://github.com/IgorKurkov/typescript-examples](https://github.com/IgorKurkov/typescript-examples)

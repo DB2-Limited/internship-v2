@@ -1,6 +1,7 @@
 # Lecture 4
 
 ### HTML template engines
+
 - Pug
 - Nunjucks
 - Embedded JS
@@ -8,7 +9,9 @@
 - Mustache
 
 ###### Pug
+
 **Features:**
+
 - Works with any build tools or render engine on Node server
 - Can be integrated into Vue / React / Angular
 - Less HTML code
@@ -19,6 +22,7 @@
 - `.pug` file extension
 
 **Pug references:**
+
 - Variables
 - Case (JS `switch` analog)
 - Code (inline JS code in the template)
@@ -31,7 +35,9 @@
 - Mixins
 
 ###### Nunjucks
+
 **Features:**
+
 - Works with any build tools or render engine on Node server
 - Can be integrated into Vue / React / Angular (?)
 - Possibility to insert content from one file into another
@@ -40,6 +46,7 @@
 - `.njk` file extension
 
 **Nunjucks references:**
+
 - Variables
 - Inheritance
 - Tags (`if`, `for`, `asyncEach`, `asyncAll`, `macro`, `set`, `extends`, `block`, `include`, `import`, `raw`, `verbatim`, `filter`, `call`)
@@ -54,9 +61,10 @@
 - Gulp
 - Webpack
 - Grunt
-- *... etc*
+- _... etc_
 
 **Gulp useful plugins:**
+
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [browser-sync](https://www.npmjs.com/package/browser-sync)
 - [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css)
@@ -66,4 +74,3 @@
 - [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 - [gulp-cached](https://www.npmjs.com/package/gulp-cached)
 - [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
-

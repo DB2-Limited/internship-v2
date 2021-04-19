@@ -1,7 +1,9 @@
 # Lecture 3
 
 ### HTML5 & CSS3 intro
+
 ###### HTML 5
+
 - **New Doctype:** HTML5 has a new doctype function where you only need to write and you are ready to go. There is no struggle of memorizing complicated and difficult codes. The declaration is very simple in this version and it allows browsers to render page in the standard mode.
 - **Media Support:** HTML5 brings you an outstanding audio and video support. You can easily add audio and video files to make your website look lively and engaging.
 - **Flawless content editing:** The current HTML version has an attribute called contenteditable that helps you edit content quickly and easily. This can help in taking advantage of local storage and various other uses.
@@ -17,50 +19,53 @@
 - **Opacity levels:** In previous versions, designers had to create a new image or make use of CSS filters. But in CSS3, you simply have to provide an input that will get the desirable effects.
 
 ### Semantic HTML
+
 - The semantic elements added in HTML5 are:
-    - `<article>`
-    - `<aside>`
-    - `<details>`
-    - `<figcaption>`
-    - `<figure>`
-    - `<footer>`
-    - `<header>`
-    - `<main>`
-    - `<mark>`
-    - `<nav>`
-    - `<section>`
-    - `<summary>`
-    - `<time>`
+  - `<article>`
+  - `<aside>`
+  - `<details>`
+  - `<figcaption>`
+  - `<figure>`
+  - `<footer>`
+  - `<header>`
+  - `<main>`
+  - `<mark>`
+  - `<nav>`
+  - `<section>`
+  - `<summary>`
+  - `<time>`
 - Elements such as `<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, and `<footer>` act more or less like `<div>` elements. They group other elements together into page sections. However where a `<div>` tag could contain any type of information, it is easy to identify what sort of information would go in a semantic `<header>` region.
 - https://www.w3schools.com/html/html5_semantic_elements.asp
-![semantic first example](./semantic1.jpg)
+  ![semantic first example](./semantic1.jpg)
 
 ```html
 <header></header>
 <section>
-    <article>
-        <figure>
-            <img>
-            <figcaption></figcaption>
-        </figure>
-    </article>
+  <article>
+    <figure>
+      <img />
+      <figcaption></figcaption>
+    </figure>
+  </article>
 </section>
 <footer></footer>
 ```
+
 ```html
 <div id="header"></div>
 <div class="section">
-    <div class="article">
-        <div class="figure">
-            <img>
-            <div class="figcaption"></div>
-        </div>
+  <div class="article">
+    <div class="figure">
+      <img />
+      <div class="figcaption"></div>
     </div>
+  </div>
 </div>
 <div id="footer"></div>
 ```
 
 ### CSS Frameworks
+
 - Bootstrap - https://getbootstrap.com/
 - Foundation - https://foundation.zurb.com/
 - Bulma - https://bulma.io/
@@ -68,30 +73,33 @@
 - Materialize - https://materializecss.com/
 - Pure - https://purecss.io/
 - Skeleton - http://getskeleton.com/
-- ... *many more*
-- https://saravanakumargn.github.io/css-frameworks-compare/ *compare css frameworks*
-- https://youtu.be/FEs2jgZBaQA?t=860 *why you don`t need css framework*
+- ... _many more_
+- https://saravanakumargn.github.io/css-frameworks-compare/ _compare css frameworks_
+- https://youtu.be/FEs2jgZBaQA?t=860 _why you don`t need css framework_
 - https://medium.com/magnetcoop/do-you-really-need-a-css-framework-767a8434eb76
 
-
-
 ### Package managers
+
 **Package manager** - command line client with access to an online database(registry) of libraries(packages).
+
 - Pinned versions
 - A stable distribution
 - Decentralization
-    - Stronger encapsulation for dependencies.
-    - Advancing semantic versioning.
-    - Centralization as a special-case.
+
+  - Stronger encapsulation for dependencies.
+  - Advancing semantic versioning.
+  - Centralization as a special-case.
 
 - https://www.npmjs.com/
 - https://yarnpkg.com/en/
 
 ###### NPM
+
 Pros:
+
 - `nvm` or `n`
 - audit
-Cons:
+  Cons:
 - speed
 - caching
 - security
@@ -99,7 +107,9 @@ Cons:
 - node-gyp
 
 ###### Yarn
+
 Pros:
+
 - `Lerna`
 - speed
 - caching
@@ -109,15 +119,18 @@ Pros:
 - predictability
 
 Cons:
+
 - separate install
 - sending data to Facebook
 
 ###### package.json
 
 - Initializing
+
 ```bash
 npm init -y
 ```
+
 - Example with default values
 
 ```json
@@ -127,22 +140,24 @@ npm init -y
   "description": "> The aim of education should be to teach us rather how to think, than what to think.",
   "main": "index.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/DB2-Limited/internship.git"
+    "type": "git",
+    "url": "git+https://github.com/DB2-Limited/internship.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-      "url": "https://github.com/DB2-Limited/internship/issues"
+    "url": "https://github.com/DB2-Limited/internship/issues"
   },
   "homepage": "https://github.com/DB2-Limited/internship#readme"
 }
 ```
+
 - Licensing
+
   - https://choosealicense.com/
   - https://help.github.com/en/articles/licensing-a-repository
 
@@ -156,6 +171,7 @@ npm init -y
 ```
 
 ###### NPM vs Yarn commands
+
 <table>
 <tbody>
     <tr>
@@ -242,150 +258,153 @@ npm init -y
 </table>
 
 ### Adaptive coding
+
 ###### media queries
+
 ```css
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
+@media only screen and (min-width: 321px) {
+  /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
+@media only screen and (max-width: 320px) {
+  /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
 }
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* Styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
 }
 
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
 }
 /**********
 iPad 3
 **********/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
 }
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-/* Styles */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
 }
 
 /* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-/* Styles */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
 }
 
 /* iPhone 4 ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
 /* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
 /* iPhone 6, 7, 8 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
 /* iPhone 6+, 7+, 8+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
 /* iPhone X ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
 /* iPhone XS Max, XR ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
 /* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
 }
 
 /* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
 /* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-/* Styles */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
 }
 ```
 
-- https://www.w3schools.com/css/css3_mediaqueries_ex.asp *responsive intro*
-- https://www.sitepoint.com/media-queries-width-vs-device-width/ *width vs device width*
-- https://habr.com/ru/post/150071/ *-webkit-device-pixel-ratio*
-- https://css-tricks.com/snippets/css/retina-display-media-query/ *-webkit-device-pixel-ratio*
-
+- https://www.w3schools.com/css/css3_mediaqueries_ex.asp _responsive intro_
+- https://www.sitepoint.com/media-queries-width-vs-device-width/ _width vs device width_
+- https://habr.com/ru/post/150071/ _-webkit-device-pixel-ratio_
+- https://css-tricks.com/snippets/css/retina-display-media-query/ _-webkit-device-pixel-ratio_
 
 ### CSS Preprocessors & Postprocessors
+
 > A traditional preprocessor like Sass gives you a whole bunch of functionality all bundled into one tool, irrespective of whether you need or will use all of those features.
 > On the flip side, PostCSS is a blank slate; you can add as many or as few features to your process as you require.
 
 ###### Sass
+
 - Preprocessing
 - Variables
 - Nesting
@@ -393,8 +412,8 @@ iPad 3
 - Extend/Inheritance
 - Operators
 
-- https://sass-lang.com/guide 
-- https://www.developerdrive.com/10-best-sass-mixins-for-web-developers/ *(mixins)*
+- https://sass-lang.com/guide
+- https://www.developerdrive.com/10-best-sass-mixins-for-web-developers/ _(mixins)_
 
 ```sass
 //************************ MIXINS **************************
@@ -415,7 +434,7 @@ iPad 3
     display: table
   &:after
     clear: both
-    
+
 @mixin bp-960
   @media (max-width: 960px)
     @content
@@ -423,7 +442,7 @@ iPad 3
 @mixin bp-768
   @media (max-width: 768px)
     @content
-    
+
 
 @mixin bp-460
   @media (max-width: 460px)
@@ -450,6 +469,7 @@ iPad 3
 ```
 
 ###### PostCSS
+
 [precss](https://github.com/jonathantneal/precss) – is a tool that allows you to use Sass-like markup in your CSS files. Enjoy a familiar syntax with variables, mixins, conditionals, and other goodies.
 
 [cssnext](https://github.com/cssnext/cssnext/) – is a CSS transpiler that allows you to use the latest CSS syntax today. It transforms CSS specs into more compatible CSS so you don’t need to wait for browser support.

@@ -3,9 +3,9 @@
 ### Arrays
 
 ```js
-var fruits = ["Banana", "Apple", "Orange"];
+var fruits = ['Banana', 'Apple', 'Orange'];
 // or
-var fruits = new Array("Banana", "Apple", "Orange");
+var fruits = new Array('Banana', 'Apple', 'Orange');
 ```
 
 **Arrays to strings methods:**
@@ -65,7 +65,7 @@ Functions are objects that:
 
 ```js
 function sayHello() {
-  console.log("Hello world!");
+  console.log('Hello world!');
 }
 
 sayHello();
@@ -73,7 +73,7 @@ sayHello();
 
 ```js
 // never declare a function like this
-var add = new Function("a, b", "return a + b");
+var add = new Function('a, b', 'return a + b');
 
 add(2, 3);
 ```
@@ -84,8 +84,8 @@ You can declare as many **local** variables as you want in your function body. T
 
 ```js
 function sayHello() {
-  var name = "John";
-  console.log("Hello, " + name);
+  var name = 'John';
+  console.log('Hello, ' + name);
 }
 
 sayHello();
@@ -96,11 +96,11 @@ console.log(name);
 You can also read & write global variables which declared outside of function body.
 
 ```js
-var name = "John";
+var name = 'John';
 
 function sayHello() {
-  console.log("Hello, " + name);
-  name = "Vasya";
+  console.log('Hello, ' + name);
+  name = 'Vasya';
 }
 
 sayHello();
@@ -112,19 +112,19 @@ console.log(name);
 You can define which arguments you function will accept. This arguments will be copiend into function scope local variables. Also you can use arguments with the default values.
 
 ```js
-function sayHello(name = "John") {
-  console.log("Hello, " + name);
+function sayHello(name = 'John') {
+  console.log('Hello, ' + name);
 }
 
 sayHello();
-sayHello("Vasya");
+sayHello('Vasya');
 ```
 
 ###### Hoisting
 
 **Hoisting** - mechanism where variables and functions declarations are moved to the top of their scrope before exectuion.
 
-![Lifecycle](./lifecycle.jpg ":size=300x500")
+![Lifecycle](./lifecycle.jpg ':size=300x500')
 
 ```js
 function hoist() {
@@ -169,12 +169,12 @@ Function are objects, so we can passed them as arguments to other functions.
 
 ```js
 function sayHello(callback) {
-  console.log("Hello!");
+  console.log('Hello!');
   callback();
 }
 
 function reply() {
-  console.log("Hey!");
+  console.log('Hey!');
 }
 
 sayHello(reply);
@@ -193,34 +193,34 @@ let obj2 = {};
 
 ```js
 let obj = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: 'John',
+  lastName: 'Smith',
 };
 
 console.log(obj.firstName);
-console.log(obj["firstName"]);
+console.log(obj['firstName']);
 ```
 
 ###### Check if object has a property
 
 ```js
 let obj = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: 'John',
+  lastName: 'Smith',
 };
 
 // using 'in'
-if ("firstName" in obj) {
-  console.log("With first name");
+if ('firstName' in obj) {
+  console.log('With first name');
 } else {
-  console.log("Without first name");
+  console.log('Without first name');
 }
 
 // equal to undefined
 if (obj.firstName !== undefined) {
-  console.log("With first name");
+  console.log('With first name');
 } else {
-  console.log("Without first name");
+  console.log('Without first name');
 }
 ```
 
@@ -237,9 +237,9 @@ for (let key in obj) {
 
 ```js
 let obj = {
-  3: "Third",
-  2: "Second",
-  1: "First",
+  3: 'Third',
+  2: 'Second',
+  1: 'First',
 };
 
 for (let key in obj) {
@@ -254,18 +254,18 @@ Browser engine will create a `structure` for each objects type and store only va
 ```js
 let people = [
   {
-    firstName: "John",
-    lastName: "Smith",
+    firstName: 'John',
+    lastName: 'Smith',
     age: 23,
   },
   {
-    firstName: "Vasya",
-    lastName: "Pupkin",
+    firstName: 'Vasya',
+    lastName: 'Pupkin',
     age: 25,
   },
   {
-    firstName: "Ivan",
-    lastName: "Ivanov",
+    firstName: 'Ivan',
+    lastName: 'Ivanov',
     age: 27,
   },
 ];
@@ -279,13 +279,13 @@ Storing the same object in different variables will fill only one memory cell.
 
 ```js
 // variables flow
-let a = "Just a regular string"; // will be saved to a memory cell "A"
+let a = 'Just a regular string'; // will be saved to a memory cell "A"
 let b = a; // will be saved to a memory cell "B"
 
 // objects flow
 let obj = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: 'John',
+  lastName: 'Smith',
 }; // will be saved to a memory cell "A"
 
 let obj2 = obj; // will use memory cell "A"
@@ -309,17 +309,17 @@ String transformation with `toString`:
 
 ```js
 let obj = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: 'John',
+  lastName: 'Smith',
 };
 
 alert(obj); // [object Object]
 
 let obj2 = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: 'John',
+  lastName: 'Smith',
   toString: function () {
-    return this.firstName + " " + this.lastName;
+    return this.firstName + ' ' + this.lastName;
   },
 };
 
@@ -368,13 +368,13 @@ Conflicts:
 
 ```js
 let obj = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: 'John',
+  lastName: 'Smith',
 };
 
-Object.defineProperty(obj, "fullName", {
+Object.defineProperty(obj, 'fullName', {
   get: function () {
-    return this.firstName + " " + this.lastName;
+    return this.firstName + ' ' + this.lastName;
   },
   set: function (val) {
     let splittedVal = val.split();
@@ -384,7 +384,7 @@ Object.defineProperty(obj, "fullName", {
 });
 
 console.log(obj.fullName);
-obj.fullName = "Vasya Pupkin";
+obj.fullName = 'Vasya Pupkin';
 console.log(obj.fullName);
 ```
 
@@ -401,8 +401,8 @@ function Man(fullName) {
   };
 }
 
-let man = new Man("John Smith");
-let man2 = new Man("Vasya Pupkin");
+let man = new Man('John Smith');
+let man2 = new Man('Vasya Pupkin');
 console.log(man);
 console.log(man2);
 man.sayHello();

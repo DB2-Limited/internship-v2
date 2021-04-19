@@ -1,6 +1,9 @@
 # Lecture 12
+
 ## Vue.js
+
 Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.
+
 ## Installation
 
 - `Direct <script> Include`
@@ -31,7 +34,9 @@ https://github.com/vuejs/vue-devtools#vue-devtools
 > obj.text
 "textsetget"
 ```
+
 ![comp](component1.png)
+
 ## Vue object methods
 
 - `Vue.extend` - allows to subclass the Vue object, to create a custom profile
@@ -47,17 +52,19 @@ https://github.com/vuejs/vue-devtools#vue-devtools
 - `Vue.version` - returns the currently installed version of Vue
 
 ## Components
+
 ```js
 // Define a new component called button-counter
 Vue.component('button-counter', {
   data: function () {
     return {
-      count: 0
-    }
+      count: 0,
+    };
   },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
-})
+  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>',
+});
 ```
+
 ![comp](component2.png)
 https://vuejs.org/v2/guide/components.html https://flaviocopes.com/vue-cheat-sheet/#instance-properties
 
@@ -75,6 +82,7 @@ https://vuejs.org/v2/guide/components.html https://flaviocopes.com/vue-cheat-she
 - `deactivated` - called when a kept-alive component is deactivated
 
 https://ru.vuejs.org/v2/guide/instance.html
+
 ## Directives
 
 https://vuejs.org/v2/api/#Directives
@@ -87,9 +95,7 @@ https://vuejs.org/v2/api/#Directives
 Render the element or template block multiple times based on the source data. The directive's value must use the special syntax alias in expression to provide an alias for the current element being iterated on:
 
 ```html
-<div v-for="item in items">
-  {{ item.text }}
-</div>
+<div v-for="item in items">{{ item.text }}</div>
 ```
 
 Alternatively, you can also specify an alias for the index (or the key if used on an Object):
@@ -103,9 +109,7 @@ Alternatively, you can also specify an alias for the index (or the key if used o
 The default behavior of v-for will try to patch the elements in-place without moving them. To force it to reorder elements, you need to provide an ordering hint with the key special attribute:
 
 ```html
-<div v-for="item in items" :key="item.id">
-  {{ item.text }}
-</div>
+<div v-for="item in items" :key="item.id">{{ item.text }}</div>
 ```
 
 In 2.6+, v-for can also work on values that implement the Iterable Protocol, including native Map and Set. However, it should be noted that Vue 2.x currently does not support reactivity on Map and Set values, so cannot automatically detect changes.
@@ -118,6 +122,7 @@ In 2.6+, v-for can also work on values that implement the Iterable Protocol, inc
 - Modifiers: `prop` `camel` `sync`
 
 ## Usage
+
 Dynamically bind one or more attributes, or a component prop to an expression.
 
 When used to bind the class or style attribute, it supports additional value types such as Array or Objects. See linked guide section below for more details.
@@ -125,48 +130,49 @@ When used to bind the class or style attribute, it supports additional value typ
 When used for prop binding, the prop must be properly declared in the child component.
 
 When used without an argument, can be used to bind an object containing attribute name-value pairs. Note in this mode class and style does not support Array or Objects.
+
 ## Example:
+
 ```html
 <!-- bind an attribute -->
-<img v-bind:src="imageSrc">
+<img v-bind:src="imageSrc" />
 
 <!-- dynamic attribute name (2.6.0+) -->
 <button v-bind:[key]="value"></button>
 
 <!-- shorthand -->
-<img :src="imageSrc">
+<img :src="imageSrc" />
 
 <!-- shorthand dynamic attribute name (2.6.0+) -->
 <button :[key]="value"></button>
 
 <!-- with inline string concatenation -->
-<img :src="'/path/to/images/' + fileName">
+<img :src="'/path/to/images/' + fileName" />
 
 <!-- class binding -->
 <div :class="{ red: isRed }"></div>
 <div :class="[classA, classB]"></div>
 <div :class="[classA, { classB: isB, classC: isC }]">
+  <!-- style binding -->
+  <div :style="{ fontSize: size + 'px' }"></div>
+  <div :style="[styleObjectA, styleObjectB]"></div>
 
-<!-- style binding -->
-<div :style="{ fontSize: size + 'px' }"></div>
-<div :style="[styleObjectA, styleObjectB]"></div>
+  <!-- binding an object of attributes -->
+  <div v-bind="{ id: someProp, 'other-attr': otherProp }"></div>
 
-<!-- binding an object of attributes -->
-<div v-bind="{ id: someProp, 'other-attr': otherProp }"></div>
+  <!-- DOM attribute binding with prop modifier -->
+  <div v-bind:text-content.prop="text"></div>
 
-<!-- DOM attribute binding with prop modifier -->
-<div v-bind:text-content.prop="text"></div>
+  <!-- prop binding. "prop" must be declared in my-component. -->
+  <my-component :prop="someThing"></my-component>
 
-<!-- prop binding. "prop" must be declared in my-component. -->
-<my-component :prop="someThing"></my-component>
+  <!-- pass down parent props in common with a child component -->
+  <child-component v-bind="$props"></child-component>
 
-<!-- pass down parent props in common with a child component -->
-<child-component v-bind="$props"></child-component>
-
-<!-- XLink -->
-<svg><a :xlink:special="foo"></a></svg>
+  <!-- XLink -->
+  <svg><a :xlink:special="foo"></a></svg>
+</div>
 ```
-
 
 ### v-on
 
@@ -199,6 +205,7 @@ When listening to native DOM events, the method receives the native event as the
 Starting in 2.4.0+, v-on also supports binding to an object of event/listener pairs without an argument. Note when using the object syntax, it does not support any modifiers.
 
 ### v-model
+
 This directive will help work with forms
 
 https://ru.vuejs.org/v2/guide/forms.html

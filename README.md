@@ -62,6 +62,7 @@
 - ES6 Classes
 
 ### [18.03 Lection 9](/lecture-9/lecture.md)
+
 - Promise
 - FS
 - Event loop
@@ -69,11 +70,13 @@
 - Heroku
 
 ### [22.03 Lection 10](/lecture-10/lecture.md)
+
 - Databases
 - SQL
 - Postgres
 
 ### [26.03 Lection 11](/lecture-11/lecture.md)
+
 - NoSQL
 - SQL
 - Validation
@@ -81,6 +84,7 @@
 - Redis
 
 ### [29.03 Lection 12](/lecture-12/lecture.md)
+
 - Vue.js
 - v-for
 - v-on
@@ -88,9 +92,11 @@
 - v-model
 
 ### [08.04 Lection 15](/lecture-15/lecture.md)
+
 - Auth
 - Passport.js
 
 ### [08.04 Lection 16](/lecture-16/lecture.md)
+
 - REST
 - Project architecture

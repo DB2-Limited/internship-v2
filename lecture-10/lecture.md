@@ -232,9 +232,9 @@ FROM movies
 WHERE name LIKE 'The%';
 ```
 
-####         _ Wildcard
+#### \_ Wildcard
 
-The _ wildcard can be used in a `LIKE` operator pattern to match any single unspecified character. The given query will
+The \_ wildcard can be used in a `LIKE` operator pattern to match any single unspecified character. The given query will
 match any movie which begins with a single character, followed by ove.
 
 ```sql
@@ -362,8 +362,7 @@ FROM transactions;
 The `COUNT()` aggregate function returns the total number of rows that match the specified criteria. For instance, to
 find the total number of employees who have less than 5 years of experience, the given query can be used.
 
-Note: A column name of the table can also be used instead of *. Unlike `COUNT(*)`, this variation `COUNT(column)` will
-not count `NULL` values in that column.
+Note: A column name of the table can also be used instead of _. Unlike `COUNT(_)`, this variation `COUNT(column)`will not count`NULL` values in that column.
 
 ```sql
 SELECT COUNT(*)
@@ -435,6 +434,7 @@ WHERE year = 2015;
 ```
 
 #### Operators
+
 Operators
 
 **Logical**:
@@ -454,19 +454,19 @@ Operators
 
 Math:
 
-- +
 - -
-- *
+- -
+- -
 - /
 - %
 - ^
 - |/
 - @
 
-
 ### Multiple Tables
 
 ![](./images/sql-joins.png)
+
 #### Inner Join
 
 The JOIN clause allows for the return of results from more than one table by joining them together with other results
@@ -485,7 +485,6 @@ ON books.author_id = authors.id;
 An outer join will combine rows from different tables even if the join condition is not met. In a LEFT JOIN, every row
 in the left table is returned in the result set, and if the join condition is not met, then NULL values are used to fill
 in the columns from the right table.
-
 
 ```sql
 SELECT column_name(s)
@@ -542,7 +541,6 @@ SELECT name
 FROM last_names
 ```
 
-
 #### Foreign Key
 
 A foreign key is a reference in one table’s records to the primary key of another table. To maintain multiple records
@@ -550,7 +548,6 @@ for a specific row, the use of foreign key plays a vital role. For instance, to 
 customer, the table order (illustrated at the bottom of the image) can contain a foreign key.
 
 ![](images/foreign-key.png)
-
 
 #### Primary Key
 
@@ -560,45 +557,52 @@ keys are often used in JOIN operations.
 
 ![](images/primary-key.png)
 
-
 ## psql
 
 - Create database
+
 ```sql
 CREATE DATABASE WITH OWNER some_user;
 ```
 
 - Create user
+
 ```sql
 CREATE ROLE some_username WITH PASSWORD 'somepassword';
 ```
+
 - Allow login
+
 ```sql
 ALTER ROLE some_username WITH LOGIN;
 ```
 
 - Delete user
+
 ```sql
 DROP ROLE some_username;
 ```
 
 - Get all tables
+
 ```sql
 \dt
 ```
 
 - Get all users
+
 ```sql
 \du
 ```
+
 - Describe table schema:
+
 ```sql
 \d+ some_table_name
 ```
 
 - Run script from file:
+
 ```bash
 psql -f myscript.sql
 ```
-
-

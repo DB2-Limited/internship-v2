@@ -150,12 +150,14 @@ References:
 - http://learn.javascript.ru/event-delegation
 - https://www.youtube.com/watch?v=cCOL7MC4Pl0 (u can choose rus subs)
 - https://www.youtube.com/watch?v=8aGhZQkoFbQ (u can choose rus subs)
+
 ### Lecture 8 Homework
 
 - http://learn.javascript.ru/task/add-method-property-coffeemachine
 - http://learn.javascript.ru/functional-inheritance#tasks
 
 References:
+
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 - https://learn.javascript.ru/call-apply
 - https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
@@ -163,28 +165,33 @@ References:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 ### Lecture 9 Homework
-* Write Node.js (Koa-based) server
-* Integrate Nunjucks template engine
-* Deploy to Heroku
-* Could read the article, please [link](https://learn.javascript.ru/async-await)
+
+- Write Node.js (Koa-based) server
+- Integrate Nunjucks template engine
+- Deploy to Heroku
+- Could read the article, please [link](https://learn.javascript.ru/async-await)
+
 ### Lecture 10 Homework
 
-
 Postgres installation:
+
 - Ubuntu 20.04: https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart
-- Mac: 
+- Mac:
   - https://postgresapp.com/
   - or via `brew install postgresql`
 - Windows: https://www.postgresql.org/download/windows/
 
 References:
+
 - https://www.codecademy.com/learn/learn-sql/modules/learn-sql-manipulation/cheatsheet
 - https://www.postgresqltutorial.com/
 
 Tasks:
+
 - Setup PostgreSQL locally.
- 
+
 - Run scripts from following files:
+
   - [Countries Table](lecture-10/countries.sql ':ignore')
   - [Population Years Table](lecture-10/population_years.sql ':ignore')
 
@@ -198,39 +205,48 @@ Tasks:
   7. What was the total population of each continent in 2010?
 
 ### Lecture 11 Homework
-* Write CRUD for user and category.
-* Repeat logic for Redis.
-* CREATE MIGRATION!!!!!!!!!!!!!!!!!!!!!!!!!
-* Deploy your postgres and redis in cloud and in local. For use cloud, redisLab and elephantsql.
-* In the end I must create a request in heroku for CRUD!!!
-* Завдання з зірочкою =) .Check unique email and username for create and update. (HINT check constraint)
+
+- Write CRUD for user and category.
+- Repeat logic for Redis.
+- CREATE MIGRATION!!!!!!!!!!!!!!!!!!!!!!!!!
+- Deploy your postgres and redis in cloud and in local. For use cloud, redisLab and elephantsql.
+- In the end I must create a request in heroku for CRUD!!!
+- Завдання з зірочкою =) .Check unique email and username for create and update. (HINT check constraint)
 
 ### Lecture 12 Homework
 
-* Rewrite all njk on vue
-* Завдання з зірочкою. Use Vue Router.
+- Rewrite all njk on vue
+- Завдання з зірочкою. Use Vue Router.
 
 ### Lecture 13 Homework
 
-* Create validation for input. Use https://ru.vuejs.org/v2/cookbook/form-validation.html or https://vee-validate.logaretm.com/v4.
-* You will have free time for improving your Vue and backend app.
+- Create validation for input. Use https://ru.vuejs.org/v2/cookbook/form-validation.html or https://vee-validate.logaretm.com/v4.
+- You will have free time for improving your Vue and backend app.
 
 ### Lecture 14
-* Keep calm and will learn Vue.
+
+- Keep calm and will learn Vue.
 
 ### Lecture 15
-* Integrate passport.js to your project.
-* Replace all the numbers an secrets that I pointed to on lecture with config values.
-* For project structure:
- - create another folder with middlewares in src and store there your middlewares, obviously. For example, you have error catcher. Also move your validation as a middleware too.
- - make sure that every entity in your project (User, Category) has the next structure, for example User:
- -  - users/
- -  -  - models/
- -  -  -  - User.js (class with all of the user fields, some must to be private and etc, method for get auth data, which return email, fname, lname)
- -  -  -  - UserDB.js (the same as I shown you, but has to return User class objects, or the result of get auth data method)
- -  -  - users.controller.js
- -  -  - users.router.js
- -  -  - users.validator.js (exported as middlwares to be used in router)
 
- ### Lecture 16
-* Finish the task in lecture 15. Good luck!
+- Integrate passport.js to your project.
+- Replace all the numbers an secrets that I pointed to on lecture with config values.
+- For project structure:
+
+* create another folder with middlewares in src and store there your middlewares, obviously. For example, you have error catcher. Also move your validation as a middleware too.
+* make sure that every entity in your project (User, Category) has the next structure, for example User:
+* - users/
+* - - models/
+* - - - User.js (class with all of the user fields, some must to be private and etc, method for get auth data, which return email, fname, lname)
+* - - - UserDB.js (the same as I shown you, but has to return User class objects, or the result of get auth data method)
+* - - users.controller.js
+* - - users.router.js
+* - - users.validator.js (exported as middlwares to be used in router)
+
+### Lecture 16
+
+- Finish the task in lecture 15. Good luck!
+
+### Lecture 17
+
+- play with typescript :) try to add it to your project, enjoy it!

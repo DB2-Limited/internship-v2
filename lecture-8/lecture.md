@@ -32,9 +32,9 @@ You saw a simple example of this in the Person object and createPerson function 
 
 ```js
 function CoffeeMachine(power) {
-  this.waterAmount = 0; 
+  this.waterAmount = 0;
 
-  alert( 'Coffee machine with power: ' + power + ' watt created');
+  alert('Coffee machine with power: ' + power + ' watt created');
 }
 
 // create
@@ -45,9 +45,9 @@ coffeeMachine.waterAmount = 200;
 ```
 
 ###### Private and Public methods
+
 ```js
 function CoffeeMachine(power) {
-
   this.waterAmount = 0;
 
   // private method
@@ -57,15 +57,14 @@ function CoffeeMachine(power) {
 
   // private method
   function onReady() {
-    alert( 'Кофе готов!' );
+    alert('Кофе готов!');
   }
 
   // public method
-  this.run = function() {
+  this.run = function () {
     setTimeout(onReady, getBoilTime());
   };
 }
-
 
 var coffeeMachine = new CoffeeMachine(100);
 coffeeMachine.waterAmount = 200;
@@ -74,20 +73,21 @@ coffeeMachine.run();
 ```
 
 ###### Access to object from internal methods
+
 ```js
 function CoffeeMachine(power) {
   this.waterAmount = 0;
   var WATER_HEAT_CAPACITY = 4200;
 
   function getBoilTime() {
-    return this.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    return (this.waterAmount * WATER_HEAT_CAPACITY * 80) / power;
   }
 
   function onReady() {
-    alert( 'Coffee ready!' );
+    alert('Coffee ready!');
   }
 
-  this.run = function() {
+  this.run = function () {
     // usding call
     setTimeout(onReady, getBoilTime.call(this));
   };
@@ -95,7 +95,7 @@ function CoffeeMachine(power) {
 var coffeeMachine = new CoffeeMachine(100000);
 coffeeMachine.waterAmount = 200;
 coffeeMachine.run();
-``` 
+```
 
 or
 
@@ -105,15 +105,15 @@ function CoffeeMachine(power) {
 
   var WATER_HEAT_CAPACITY = 4200;
 
-  var getBoilTime = function() {
-    return this.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+  var getBoilTime = function () {
+    return (this.waterAmount * WATER_HEAT_CAPACITY * 80) / power;
   }.bind(this);
 
   function onReady() {
-    alert( 'Coffee ready!' );
+    alert('Coffee ready!');
   }
 
-  this.run = function() {
+  this.run = function () {
     setTimeout(onReady, getBoilTime());
   };
 }
@@ -123,6 +123,7 @@ coffeeMachine.run();
 ```
 
 ###### Using `this` as closure
+
 ```js
 function CoffeeMachine(power) {
   this.waterAmount = 0;
@@ -133,25 +134,24 @@ function CoffeeMachine(power) {
   var self = this;
 
   function getBoilTime() {
-      return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
-    }
-
-  function onReady() {
-    alert( 'Coffee ready!' );
+    return (self.waterAmount * WATER_HEAT_CAPACITY * 80) / power;
   }
 
-  this.run = function() {
+  function onReady() {
+    alert('Coffee ready!');
+  }
+
+  this.run = function () {
     setTimeout(onReady, getBoilTime());
   };
-
 }
 
 var coffeeMachine = new CoffeeMachine(100000);
 coffeeMachine.waterAmount = 200;
 coffeeMachine.run();
 ```
-self now needs correct getters and setters to work correctly ;)
 
+self now needs correct getters and setters to work correctly ;)
 
 ### Functional OOP
 
@@ -159,11 +159,11 @@ self now needs correct getters and setters to work correctly ;)
 function Machine() {
   var enabled = false;
 
-  this.enable = function() {
+  this.enable = function () {
     enabled = true;
   };
 
-  this.disable = function() {
+  this.disable = function () {
     enabled = false;
   };
 }
@@ -175,10 +175,9 @@ function CoffeeMachine(power) {
 
   var waterAmount = 0;
 
-  this.setWaterAmount = function(amount) {
+  this.setWaterAmount = function (amount) {
     waterAmount = amount;
   };
-
 }
 
 var coffeeMachine = new CoffeeMachine(10000);
@@ -188,22 +187,22 @@ coffeeMachine.setWaterAmount(100);
 coffeeMachine.disable();
 ```
 
-
 ```js
 showFullName.call(user, 'firstName', 'surname'); // arguments listed
 showFullName.apply(user, ['firstName', 'surname']); // arguments as array
 ```
 
 access to parents properties
+
 ```js
 function Machine() {
   var enabled = false;
 
-  this.enable = function() {
+  this.enable = function () {
     enabled = true;
   };
 
-  this.disable = function() {
+  this.disable = function () {
     enabled = false;
   };
 }
@@ -213,22 +212,21 @@ function CoffeeMachine(power) {
 
   this.enable();
 
-  alert( enabled ); // ERROR!
+  alert(enabled); // ERROR!
 }
 
 var coffeeMachine = new CoffeeMachine(10000);
 ```
 
-
 ```js
 function Machine() {
   this._enabled = false; // -> var enabled
 
-  this.enable = function() {
+  this.enable = function () {
     this._enabled = true;
   };
 
-  this.disable = function() {
+  this.disable = function () {
     this._enabled = false;
   };
 }
@@ -238,7 +236,7 @@ function CoffeeMachine(power) {
 
   this.enable();
 
-  alert( this._enabled ); // -> true
+  alert(this._enabled); // -> true
 }
 
 var coffeeMachine = new CoffeeMachine(10000);
@@ -251,7 +249,7 @@ function CoffeeMachine(params) {
   Machine.apply(this, arguments);
 
   var parentProtected = this._protectedProperty;
-  this._protectedProperty = function(args) {
+  this._protectedProperty = function (args) {
     parentProtected.apply(this, args); // (*)
     // ...
   };
@@ -261,62 +259,70 @@ function CoffeeMachine(params) {
 ### Prototype OOP
 
 ###### Property proto
-*except IE10 -* 
+
+_except IE10 -_
+
 ```js
 var animal = {
-  eats: true
+  eats: true,
 };
 var rabbit = {
-  jumps: true
+  jumps: true,
 };
 
 rabbit.__proto__ = animal;
 
-alert( rabbit.jumps ); // true
-alert( rabbit.eats ); // true
+alert(rabbit.jumps); // true
+alert(rabbit.eats); // true
 ```
 
 ###### Method hasOwnProperty
+
 ```js
 var animal = {
-  eats: true
+  eats: true,
 };
 
 var rabbit = {
   jumps: true,
-  __proto__: animal
+  __proto__: animal,
 };
 
 for (var key in rabbit) {
-  alert( key + " = " + rabbit[key] ); // `eats` and `jumps`
+  alert(key + ' = ' + rabbit[key]); // `eats` and `jumps`
 }
 ```
+
 with `hasOwnProperty` check
+
 ```js
-alert( rabbit.hasOwnProperty('jumps') ); // true
-alert( rabbit.hasOwnProperty('eats') ); // false
+alert(rabbit.hasOwnProperty('jumps')); // true
+alert(rabbit.hasOwnProperty('eats')); // false
 ```
-check only own object 
+
+check only own object
+
 ```js
 var animal = {
-  eats: true
+  eats: true,
 };
 
 var rabbit = {
   jumps: true,
-  __proto__: animal
+  __proto__: animal,
 };
 
 for (var key in rabbit) {
   if (!rabbit.hasOwnProperty(key)) continue; // пропустить "не свои" свойства
-  alert( key + " = " + rabbit[key] ); // выводит только "jumps"
+  alert(key + ' = ' + rabbit[key]); // выводит только "jumps"
 }
 ```
 
 ###### `.prototype` method
+
 ```js
 var animal = {
-  eats: true
+  eats: true,
 };
 
 function Rabbit(name) {
@@ -324,15 +330,16 @@ function Rabbit(name) {
   this.__proto__ = animal;
 }
 
-var rabbit = new Rabbit("Кроль");
+var rabbit = new Rabbit('Кроль');
 
-alert( rabbit.eats ); //true from prototype
+alert(rabbit.eats); //true from prototype
 ```
 
 crossbrowser solution
+
 ```js
 var animal = {
-  eats: true
+  eats: true,
 };
 
 function Rabbit(name) {
@@ -341,35 +348,37 @@ function Rabbit(name) {
 
 Rabbit.prototype = animal;
 
-var rabbit = new Rabbit("Кроль"); //  rabbit.__proto__ == animal
+var rabbit = new Rabbit('Кроль'); //  rabbit.__proto__ == animal
 
-alert( rabbit.eats ); // true
+alert(rabbit.eats); // true
 ```
 
 ###### `instanceof`
+
 ```js
 function Rabbit() {}
 
 var rabbit = new Rabbit();
 
-alert( rabbit instanceof Rabbit ); // true
+alert(rabbit instanceof Rabbit); // true
 ```
 
 ###### Inheritance
+
 ```js
 function Animal(name) {
   this.name = name;
   this.speed = 0;
 }
 
-Animal.prototype.stop = function() {
+Animal.prototype.stop = function () {
   this.speed = 0;
-  alert( this.name + ' stay' );
-}
+  alert(this.name + ' stay');
+};
 
-Animal.prototype.run = function(speed) {
+Animal.prototype.run = function (speed) {
   this.speed += speed;
-  alert( this.name + ' runs, speed ' + this.speed );
+  alert(this.name + ' runs, speed ' + this.speed);
 };
 
 function Rabbit(name) {
@@ -380,15 +389,16 @@ function Rabbit(name) {
 Rabbit.prototype = Object.create(Animal.prototype);
 Rabbit.prototype.constructor = Rabbit;
 
-Rabbit.prototype.jump = function() {
+Rabbit.prototype.jump = function () {
   this.speed++;
-  alert( this.name + ' jumps, speed ' + this.speed );
-}
+  alert(this.name + ' jumps, speed ' + this.speed);
+};
 ```
 
 ## ES6 Classes
 
 Animal class
+
 ```js
 class Animal {
   static isAnimal = true;
@@ -449,6 +459,7 @@ module.exports = { Animal };
 ```
 
 Dawg class
+
 ```js
 const { Animal } = require('./lecture2-OOP-Animal');
 
@@ -482,10 +493,10 @@ class Dawg extends Animal {
 const dawg = new Dawg(false);
 dawg.state();
 Dawg.identify();
-
 ```
 
 Abstract class
+
 ```js
 class Abstract {
   constructor() {
@@ -498,5 +509,4 @@ class Abstract {
 // const a = new Abstract(); // new.target is Abstract, so it throws
 // const b = new Derived(); // new.target is Derived, so no error
 module.exports = { Abstract };
-
 ```

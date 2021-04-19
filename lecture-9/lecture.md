@@ -1,20 +1,22 @@
 # Lecture 9
 
 ## Node.js what is this?
+
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 
 ## Promise
+
 ```js
 const user = {
   name: 'Stella',
-}
+};
 
 const myPromise = new Promise((resolve, reject) => {
   // request
   setTimeout(() => {
-    resolve(user)
-  }, 100)
-})
+    resolve(user);
+  }, 100);
+});
 
 console.log(myPromise); // Promise { <pending> }
 
@@ -26,18 +28,18 @@ myPromise.then((res) => {
 ```js
 const user = {
   name: 'Stella',
-}
+};
 
 const myPromise = new Promise((resolve, reject) => {
   // request
   setTimeout(() => {
-    if (Math.round(Math.random()) >= 1 ) {
-      resolve(user)
-    } else  {
-      reject(new Error('Something went wrong'))
+    if (Math.round(Math.random()) >= 1) {
+      resolve(user);
+    } else {
+      reject(new Error('Something went wrong'));
     }
-  }, 100)
-})
+  }, 100);
+});
 
 console.log(myPromise); // Promise { <pending> }
 
@@ -45,34 +47,34 @@ myPromise
   .then((res) => {
     const newUser = { ...res };
     newUser.age = 23;
-    return newUser
+    return newUser;
   })
   .then((res) => {
     console.log(res); // { name: 'Stella', age: 23 }
-  }) 
+  })
   .catch((err) => {
     console.log(err); // Error
   })
   .finally(() => {
     console.log('end');
-  })
+  });
 ```
 
 ```js
 const user = {
   name: 'Stella',
-}
+};
 
 const myPromise = new Promise((resolve, reject) => {
   // request
   setTimeout(() => {
-    if (Math.round(Math.random()) >= 1 ) {
-      resolve(user)
-    } else  {
-      reject(new Error('Something went wrong'))
+    if (Math.round(Math.random()) >= 1) {
+      resolve(user);
+    } else {
+      reject(new Error('Something went wrong'));
     }
-  }, 100)
-})
+  }, 100);
+});
 
 console.log(myPromise); // Promise { <pending> }
 
@@ -82,70 +84,69 @@ myPromise
     newUser.age = 23;
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (Math.round(Math.random()) >= 1 ) {
-          resolve({name: 'Zlata', age: 18})
+        if (Math.round(Math.random()) >= 1) {
+          resolve({ name: 'Zlata', age: 18 });
         } else {
-          reject(new Error('Wrong second promise'))
+          reject(new Error('Wrong second promise'));
         }
-      })
-    })
+      });
+    });
   })
   .then((res) => {
     console.log(res);
-  }) 
+  })
   .catch((err) => {
     console.log(err); // Error
   })
   .finally(() => {
     console.log('end');
-  })
+  });
 ```
 
 ```js
 const user1 = {
   name: 'Stella',
-}
+};
 const user2 = {
   name: 'Zlata',
-}
+};
 
 const myPromise1 = new Promise((resolve, reject) => {
   // request
   setTimeout(() => {
-    if (Math.round(Math.random()) >= 1 ) {
-      resolve(user1)
-    } else  {
-      reject(new Error('Something went wrong 1'))
+    if (Math.round(Math.random()) >= 1) {
+      resolve(user1);
+    } else {
+      reject(new Error('Something went wrong 1'));
     }
-  }, 100)
+  }, 100);
 });
 
 const myPromise2 = new Promise((resolve, reject) => {
   // request
   setTimeout(() => {
-    if (Math.round(Math.random()) >= 1 ) {
-      resolve(user2)
-    } else  {
-      reject(new Error('Something went wrong 2'))
+    if (Math.round(Math.random()) >= 1) {
+      resolve(user2);
+    } else {
+      reject(new Error('Something went wrong 2'));
     }
-  }, 100)
+  }, 100);
 });
 
 const all = Promise.all([myPromise1, myPromise2]);
-const allSettled = Promise.allSettled([myPromise1, myPromise2])
+const allSettled = Promise.allSettled([myPromise1, myPromise2]);
 
 all
   .then((res) => {
-    console.log(res) // [ { name: 'Stella' }, { name: 'Zlata' } ]
+    console.log(res); // [ { name: 'Stella' }, { name: 'Zlata' } ]
   })
   .catch((err) => {
     console.log(err);
-  })
+  });
 
-allSettled
-  .then((res) => {
-    console.log(res);
-    /*
+allSettled.then((res) => {
+  console.log(res);
+  /*
     [
       { status: 'fulfilled', value: { name: 'Stella' } },
       {
@@ -157,46 +158,45 @@ allSettled
       }
     ]
     */
-  })
-  // catch doesn't exist
+});
+// catch doesn't exist
 ```
+
 ```js
 const user = {
   name: 'Stella',
-}
-function myFunction () {
-  return user
+};
+function myFunction() {
+  return user;
 }
 
 async function myAsyncFunction() {
-  return user
+  return user;
 }
 
-
-console.table(myFunction()) // { name: 'Stella' }
+console.table(myFunction()); // { name: 'Stella' }
 console.log(myAsyncFunction()); // Promise { { name: 'Stella' } }
 ```
 
 ```js
 const user = {
   name: 'Stella',
-}
-function myFunction () {
-  return user
+};
+function myFunction() {
+  return user;
 }
 
 async function myAsyncFunction() {
-  return user
+  return user;
 }
-
 
 async function main() {
-  const stella = myFunction() // { name: 'Stella' }
-  await myAsyncFunction().then((r) => console.log(r))
-  console.log('ss')
+  const stella = myFunction(); // { name: 'Stella' }
+  await myAsyncFunction().then((r) => console.log(r));
+  console.log('ss');
 }
 
-main()
+main();
 ```
 
 ```js
@@ -216,7 +216,9 @@ one = generator.next();
 one = generator.next();
 console.log(one); // {value: 3, done: true}
 ```
+
 ## ENV
+
 ```bash
 export STELLA=ZLATA
 ```
@@ -224,50 +226,57 @@ export STELLA=ZLATA
 ```js
 console.log(process.env.STELLA);
 ```
+
 ## FS
+
 ### Read File
+
 ```js
 const fs = require('fs');
 
 fs.readFile('data.json', 'utf-8', (err, content) => {
-  console.log(content, 1)
+  console.log(content, 1);
 });
 
 const content = fs.readFileSync('data.json', 'utf-8');
 console.log(content, 2);
 ```
+
 ### Write File
+
 ```js
 const fs = require('fs');
 
-fs.writeFile('data2.json', JSON.stringify({name: 'Stella'}), (err) => {
-  console.log(err) // null
+fs.writeFile('data2.json', JSON.stringify({ name: 'Stella' }), (err) => {
+  console.log(err); // null
 });
 
-fs.writeFileSync('data3.json', JSON.stringify({name: 'Zlata'}));
+fs.writeFileSync('data3.json', JSON.stringify({ name: 'Zlata' }));
 ```
+
 ```js
 const fs = require('fs');
 
-fs.appendFile('data2.json', JSON.stringify({name: 'Stella'}), (err) => {
-  console.log(err) // null
+fs.appendFile('data2.json', JSON.stringify({ name: 'Stella' }), (err) => {
+  console.log(err); // null
 });
 
-fs.appendFileSync('data3.json', JSON.stringify({name: 'Zlata'}));
+fs.appendFileSync('data3.json', JSON.stringify({ name: 'Zlata' }));
 ```
+
 ```js
 const fs = require('fs');
 
-let readStream = fs.createReadStream("data3.json");
+let readStream = fs.createReadStream('data3.json');
 
 readStream.on('open', () => {
   // console.log(chunk);
 });
 
-readStream.on('data', (data,) => {
+readStream.on('data', (data) => {
   console.log(data); // <Buffer>
-  console.log(data.toString()) // content
-})
+  console.log(data.toString()); // content
+});
 
 readStream.on('error', (err) => {
   res.end(err);
@@ -275,13 +284,15 @@ readStream.on('error', (err) => {
 ```
 
 ## Event Loop
+
 ![loop](loop.png)
+
 ```js
 console.log(1); // 1
 
 setTimeout(() => {
-  console.log(2) // 3
-}, 3000)
+  console.log(2); // 3
+}, 3000);
 
 console.log(3); // 2
 ```
@@ -290,9 +301,8 @@ console.log(3); // 2
 console.log(1); // 1
 
 setTimeout(() => {
-  console.log(3) // 3
-})
-
+  console.log(3); // 3
+});
 
 console.log(5); // 2
 ```
@@ -301,12 +311,12 @@ console.log(5); // 2
 console.log(1); // 1
 
 setTimeout(() => {
-  console.log(3) // 4
-})
+  console.log(3); // 4
+});
 
 process.nextTick(() => {
   console.log('I am nextTick'); // 3
-})
+});
 
 console.log(5); // 2
 ```
@@ -314,36 +324,35 @@ console.log(5); // 2
 ```js
 console.log(1); // 1
 
-
 setTimeout(() => {
-  console.log(3) // 5
-})
+  console.log(3); // 5
+});
 
 process.nextTick(() => {
   console.log('I am nextTick'); // 3
-})
+});
 
 const myPromise = new Promise((resolve, reject) => {
-  resolve({i: 'Promise'})
-})
+  resolve({ i: 'Promise' });
+});
 
-myPromise.then((res) => { console.log(res) }); // 4
+myPromise.then((res) => {
+  console.log(res);
+}); // 4
 
 console.log(5); // 2
 ```
 
 ```js
-const fs = require('fs')
+const fs = require('fs');
 const myPromise = new Promise((resolve, reject) => {
   // request
-  resolve(
-    {
-      user: {
-        name: 'Stella'
-     }
-    }
-  )
-})
+  resolve({
+    user: {
+      name: 'Stella',
+    },
+  });
+});
 
 myPromise.then((res) => {
   fs.writeFile('data.json', JSON.stringify(res), (err) => {
@@ -356,25 +365,27 @@ myPromise.then((res) => {
 
 # Node.js Frameworks
 
-* Express
-* Koa
-* Nest
-* Hapi
-* Adonis
-* Sails
-* ...
+- Express
+- Koa
+- Nest
+- Hapi
+- Adonis
+- Sails
+- ...
 
 ## Koa
+
 ```js
 const Koa = require('koa');
 const app = new Koa();
 
-app.use(async ctx => {
+app.use(async (ctx) => {
   ctx.body = 'Hello world!';
 });
 
 app.listen(3000);
 ```
+
 ### Middlewares
 
 Middleware - request and response handler function.
@@ -382,13 +393,16 @@ Middleware - request and response handler function.
 ![Welcome](midle.png)
 
 Express
+
 ```js
 async function(request, response, next) {
   // ...
   await next();
 }
 ```
+
 Koa
+
 ```js
 async function(ctx, next) {
   // ...
@@ -397,7 +411,9 @@ async function(ctx, next) {
 ```
 
 ## Application
+
 App js
+
 ```js
 const Koa = require('koa');
 const path = require('path');
@@ -429,7 +445,9 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 ```
+
 router.js
+
 ```js
 const Router = require('koa-router');
 
@@ -441,9 +459,10 @@ router.get('home', controllers.profile);
 module.exports = {
   router,
 };
-
 ```
+
 controller.js
+
 ```js
 async function profile(ctx) {
   await ctx.render('index', {
@@ -454,10 +473,11 @@ async function profile(ctx) {
 module.exports = {
   profile,
 };
-
 ```
+
 HINT setting for PUG
 npm i pug.
+
 ```js
 const render = views(path.join(__dirname, '/src/templates'), {
   extension: 'pug',
@@ -467,8 +487,8 @@ const render = views(path.join(__dirname, '/src/templates'), {
 });
 ```
 
-
 ## References
+
 - promise [link](https://learn.javascript.ru/promise)
 - node (fs etc) [link](https://metanit.com/web/nodejs/1.1.php)
 - node event loop [link-1](https://flaviocopes.com/node-event-loop/) [link-2](https://nodejs.org/es/docs/guides/event-loop-timers-and-nexttick/)

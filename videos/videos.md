@@ -35,10 +35,17 @@
 - [OOP, FP, Prototypes, ES6 Classes](https://youtu.be/5Cel95B77uc)
 
 ### Lecture #11
+
 - [NoSQL, SQL in NODE](https://youtu.be/He3tSv-_LOk)
 
 ### Lecture #15
+
 - [Auth. Passport.js](https://youtu.be/He3tSv-_LOk)
 
 ### Lecture #16
+
 - [REST. Project architecture](https://youtu.be/JVEbsoQrA5o)
+
+### Lecture #16
+
+- [Typescript](https://www.youtube.com/watch?v=W-KSUJ691G4&list=PLEFXUE8tBu3CIK7Go1UyidbRa7SsZMP4x&index=16)

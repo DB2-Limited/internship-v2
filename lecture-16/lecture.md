@@ -8,7 +8,6 @@
 
 **REST** - Representational State Transfer, Roy Fielding's derivation of the Web architectural style.
 
-
 ### URIs
 
 http://www.rfc-editor.org/rfc/rfc3986.txt
@@ -20,22 +19,19 @@ URI = scheme "://" authority "/" path [ "?" query ] [ "#" fragment ]
 ```
 
 ### URI Format rules
-- Forward slash separator (`/`) must be used to indicate a hierarchical
-relationship
 
-> [!TIP]
-> `https://api.example.com/shapes/polygons/squares`
+- Forward slash separator (`/`) must be used to indicate a hierarchical
+  relationship
+
+> [!TIP] > `https://api.example.com/shapes/polygons/squares`
 
 - A trailing forward slash (`/`) should not be included in URIs
 
-> [!TIP]
-> `https://api.example.com/users/` <br>
-> `https://api.example.com/users`
+> [!TIP] > `https://api.example.com/users/` <br> > `https://api.example.com/users`
 
 - Hyphens (`-`) should be used to improve the readability of URIs
 
-> [!TIP]
-> `https://api.example.com/blogs/john-doe/this-is-my-first-post`
+> [!TIP] > `https://api.example.com/blogs/john-doe/this-is-my-first-post`
 
 - Underscores (`_`) should not be used in URIs
 - Lowercase letters should be preferred in URI paths
@@ -45,19 +41,14 @@ relationship
 
 - Consistent subdomain names should be used for your APIs
 
-> [!TIP]
-> `https://api.example.com/` <br>
+> [!TIP] > `https://api.example.com/` <br>
 
-> [!DANGER]
-> `https://server.example.com/` <br>
-> `https://data.example.com/` <br>
-> `https://example.com/api/` <br>
+> [!DANGER] > `https://server.example.com/` <br> > `https://data.example.com/` <br> > `https://example.com/api/` <br>
 
 - Consistent subdomain names should be used for your client developer
-portal
+  portal
 
-> [!TIP]
-> `https://developers.example.com/`
+> [!TIP] > `https://developers.example.com/`
 
 ### Resource Modeling
 
@@ -70,12 +61,13 @@ portal
 **Store** - client-managed resource repository. A store resource lets an API client put resources in, get them back out, and decide when to delete them. On their own, stores do not create new resources; therefore a store never generates new URIs. Instead, each stored resource has a URI that was chosen by a client when it was initially put into the store.
 
 ### URI Path Design
+
 - A singular noun should be used for document names
 - A plural noun should be used for collection names
 - A plural noun should be used for store names
 - A verb or verb phrase should be used for controller names
 - Variable path segments may be substituted with identity-based
-values
+  values
 - CRUD function names should not be used in URIs
 
 > [!TIP]
@@ -88,6 +80,7 @@ values
 > POST `/users/1234/delete`
 
 ### URI Query Design
+
 - The query component of a URI may be used to filter collections or stores
 
 > [!TIP]
@@ -95,12 +88,13 @@ values
 > GET `/users?role=admin`
 
 - The query component of a URI should be used to paginate collection
-or store results
+  or store results
 
 > [!TIP]
 > GET `/users?pageSize=25&pageStartIndex=50`
 
 ### HTTP Interaction Design
+
 - GET and POST must not be used to tunnel other request methods
 - GET must be used to retrieve a representation of a resource
 - HEAD should be used to retrieve response headers
@@ -108,9 +102,10 @@ or store results
 - POST must be used to create a new resource in a collection
 - DELETE must be used to remove a resource from its parent
 - OPTIONS should be used to retrieve metadata that describes a
-resource’s available interactions
+  resource’s available interactions
 
 ### Response Status Codes
+
 - `200 ("OK")` should be used to indicate nonspecific success
 - `200 ("OK")` must not be used to communicate errors in the response body
 - `201 ("Created")` must be used to indicate successful resource creation
