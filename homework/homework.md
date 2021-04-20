@@ -250,3 +250,7 @@ Tasks:
 ### Lecture 17
 
 - play with typescript :) try to add it to your project, enjoy it!
+
+### Lecture 18
+
+- Integrate AWS S3 into your project. Make swagger docs for each route.

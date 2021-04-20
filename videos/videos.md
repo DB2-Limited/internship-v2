@@ -49,3 +49,7 @@
 ### Lecture #17
 
 - [Typescript](https://www.youtube.com/watch?v=W-KSUJ691G4&list=PLEFXUE8tBu3CIK7Go1UyidbRa7SsZMP4x&index=16)
+
+### Lecture #18
+
+- [AWS S3. Swagger docs](https://youtu.be/GejvzFMoQN4)

@@ -96,7 +96,16 @@
 - Auth
 - Passport.js
 
-### [08.04 Lection 16](/lecture-16/lecture.md)
+### [12.04 Lection 16](/lecture-16/lecture.md)
 
 - REST
 - Project architecture
+
+### [15.04 Lection 17](/lecture-17/lecture.md)
+
+- Typescript
+
+### [19.04 Lection 18](/lecture-18/lecture.md)
+
+- AWS S3
+- SwaggerUI docs
