@@ -200,83 +200,6 @@ ls > directories_list.txt
 ls >> directories_list.txt
 ```
 
-### Configuring the Environment
-
-#### Command line environment
-
-The environment of the command line refers to the settings and preferences of the current user. It enables users to set
-greetings, alias commands, variables, and much more.
-
-#### Shell Command env
-
-For Unix-based systems like Mac OS and Linux, the shell command env returns a list of environment variables for the
-current user.
-
-#### Alias
-
-The shell command `alias` is used to assign commonly used commands to shortcuts (or aliases). The assigned commonly used
-command should be wrapped in double quotes.
-
-```bash
-# The following command creates an alias `pd` for the command `pwd`
-alias pd="pwd"
-```
-
-#### Environment Variables
-
-Variables that can be used across terminal commands are called environment variables. They also hold information about
-the shell’s environment.
-
-#### Source Bash Profile
-
-All the commands in **~/.bash_profile** are executed with the shell command `source ~/.bash_profile`. So when changes
-are made to **~/.bash_profile**, run this command to activate the changes in the current session.
-
-#### history Command
-
-The `history` shell command is used to get a history of commands (also known as “events”) that were executed in the
-current session. The command also allows us to perform operations on this list of commands that have been executed, such
-as selecting or manipulating a command in the history.
-
-#### Export command
-
-The `export` command makes a given variable available to all child sessions initiated from the current session.
-
-```bash
-# This command will make the environment variable USER available 
-# to all child sessions with the value "Jane Doe".
-export USER="Jane Doe"
-```
-
-#### HOME Environment Variable in Unix Systems
-
-`HOME` is an environment variable present in command line environments. It is used to get the path to the current user’s
-home directory. This makes it easy for programs to access the home directory when needed.
-
-```bash
-# To show the path of the home directory use the following command:
- 
-echo $HOME
-```
-
-#### PATH Environment Variable
-
-Let's say you wrote a little shell script called hello.sh and have it located in a directory called
-/place/with/the/file. This script provides some useful function to all the files in your current directory, that you'd
-like to be able to execute no matter what directory you're in.
-
-Simply add /place/with/the/file to the $PATH variable with the following command:
-
-```bash
-export PATH=$PATH:/place/with/the/file 
-```
-
-You should now be able to execute the script anywhere on your system by just typing in its name, without having to
-include the full path as you type it.
-
-To make this change permanent, add the line above to the appropriate file that will be read when your shell
-launches: ` ~/.bash_profile`, `~/.bashrc`, or `~/.profile`.
-
 ## Permissions & Ownership
 
 ![](images/permissions.gif)
@@ -439,6 +362,84 @@ Statement after `&&` will be executed only if first half of the command is true 
 ```bash
 [ -z $1 ] && echo no argument provided
 ```
+
+## Configuring the Environment
+
+#### Command line environment
+
+The environment of the command line refers to the settings and preferences of the current user. It enables users to set
+greetings, alias commands, variables, and much more.
+
+#### Shell Command env
+
+For Unix-based systems like Mac OS and Linux, the shell command env returns a list of environment variables for the
+current user.
+
+#### Alias
+
+The shell command `alias` is used to assign commonly used commands to shortcuts (or aliases). The assigned commonly used
+command should be wrapped in double quotes.
+
+```bash
+# The following command creates an alias `pd` for the command `pwd`
+alias pd="pwd"
+```
+
+#### Environment Variables
+
+Variables that can be used across terminal commands are called environment variables. They also hold information about
+the shell’s environment.
+
+#### Source Bash Profile
+
+All the commands in **~/.bash_profile** are executed with the shell command `source ~/.bash_profile`. So when changes
+are made to **~/.bash_profile**, run this command to activate the changes in the current session.
+
+#### history Command
+
+The `history` shell command is used to get a history of commands (also known as “events”) that were executed in the
+current session. The command also allows us to perform operations on this list of commands that have been executed, such
+as selecting or manipulating a command in the history.
+
+#### Export command
+
+The `export` command makes a given variable available to all child sessions initiated from the current session.
+
+```bash
+# This command will make the environment variable USER available 
+# to all child sessions with the value "Jane Doe".
+export USER="Jane Doe"
+```
+
+#### HOME Environment Variable in Unix Systems
+
+`HOME` is an environment variable present in command line environments. It is used to get the path to the current user’s
+home directory. This makes it easy for programs to access the home directory when needed.
+
+```bash
+# To show the path of the home directory use the following command:
+ 
+echo $HOME
+```
+
+#### PATH Environment Variable
+
+Let's say you wrote a little shell script called hello.sh and have it located in a directory called
+/place/with/the/file. This script provides some useful function to all the files in your current directory, that you'd
+like to be able to execute no matter what directory you're in.
+
+Simply add /place/with/the/file to the $PATH variable with the following command:
+
+```bash
+export PATH=$PATH:/place/with/the/file 
+```
+
+You should now be able to execute the script anywhere on your system by just typing in its name, without having to
+include the full path as you type it.
+
+To make this change permanent, add the line above to the appropriate file that will be read when your shell
+launches: ` ~/.bash_profile`, `~/.bashrc`, or `~/.profile`.
+
 
 ## Packaging
 
