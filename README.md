@@ -109,3 +109,5 @@
 
 - AWS S3
 - SwaggerUI docs
+
+### [23.04 Lection 19](lecture-19/lecture.md)

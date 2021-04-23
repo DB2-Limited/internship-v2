@@ -254,3 +254,6 @@ Tasks:
 ### Lecture 18
 
 - Integrate AWS S3 into your project. Make swagger docs for each route.
+
+### Lecture 19
+- Explore shell, practice with scripts.
