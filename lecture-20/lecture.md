@@ -5,7 +5,7 @@
 ### Design Patterns
 
 ###### Signleton
-![Singleton](./signleton.png)
+![Singleton](./singleton.png)
 ```ts
 class Singleton {
   private static instance: Singleton;
