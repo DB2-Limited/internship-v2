@@ -257,3 +257,6 @@ Tasks:
 
 ### Lecture 19
 - Explore shell, practice with scripts.
+
+### Lecture 20
+- Finish your previous hometasks

@@ -57,3 +57,7 @@
 ## Lecture 18
 
 - https://github.com/lerik1408/koa-test/pull/1/files
+
+## Lecture 20
+
+- Open the lection page

@@ -53,3 +53,7 @@
 ### Lecture #18
 
 - [AWS S3. Swagger docs](https://youtu.be/GejvzFMoQN4)
+
+### Lecture #20
+
+- [UML. Design Patterns. Algorythms](https://youtu.be/oYTYwOXoZaU)

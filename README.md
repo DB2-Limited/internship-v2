@@ -114,3 +114,9 @@
 
 - Linux Basics
 - Shell Scripting
+
+### [26.04 Lection 20](lecture-20/lecture.md)
+
+- UML
+- Design Patterns
+- Algorythms
