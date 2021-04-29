@@ -120,3 +120,10 @@
 - UML
 - Design Patterns
 - Algorythms
+
+
+### [29.04 Lection 21](lecture-21/lecture.md)
+
+- AWS EC2
+- Security Groups
+- Nginx

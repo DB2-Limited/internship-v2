@@ -260,3 +260,6 @@ Tasks:
 
 ### Lecture 20
 - Finish your previous hometasks
+
+### Lecture 21
+- Deploy project to AWS EC2
