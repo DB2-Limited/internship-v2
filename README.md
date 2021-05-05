@@ -127,3 +127,10 @@
 - AWS EC2
 - Security Groups
 - Nginx
+
+
+### [04.05 Lection 22](lecture-22/lecture.md)
+
+- Docker
+- CI/CD
+
